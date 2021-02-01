@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::view('/test', 'admin.layouts.master');
 Route::get('/', function () {
     return view('welcome');
 });
@@ -20,8 +21,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('admin');
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/users', [\App\Http\Controllers\UserController::class, 'index']);
+Route::get('/mentees', [\App\Http\Controllers\MenteeController::class, 'index']);
