@@ -37,7 +37,9 @@
                     
                     <td>{{$user->created_at ? $user->created_at->diffForHumans() : 'Tidak Pasti'}}</td> -->
                     <td>{{$user->status}}</td>
+                   
                     <td><a href="{{ route('user:show', $user)}}" class="btn btn-primary">View</a></td>
+                    
                     </tr>
                 @endforeach
 
