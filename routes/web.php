@@ -20,11 +20,12 @@ Route::get('/', function () {
 
 Auth::routes();
 
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-// Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('admin');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('admin');
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/users', [\App\Http\Controllers\UserController::class, 'index']);
+Route::get('/users', [\App\Http\Controllers\UserController::class, 'index'])->name('user:list');
+Route::get('/users/{user}',[App\Http\Controllers\UserController::class, 'show'])->name('user:show');
 Route::get('/mentees', [\App\Http\Controllers\MenteeController::class, 'index']);

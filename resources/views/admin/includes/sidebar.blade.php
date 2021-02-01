@@ -5,7 +5,7 @@
         <div class="sidebar-brand-icon rotate-n-15">
             <i class="fas fa-laugh-wink"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">E - Ambilan</div>
+        <div class="sidebar-brand-text mx-3">e-Pelaporan</div>
     </a>
 
     <!-- Divider -->
@@ -31,13 +31,14 @@
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
             aria-expanded="true" aria-controls="collapseTwo">
             <i class="fas fa-fw fa-cog"></i>
-            <span>Components</span>
+            <span>Mentor</span>
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Custom Components:</h6>
-                <a class="collapse-item" href="#">Buttons</a>
-                <a class="collapse-item" href="#">Cards</a>
+                <h6 class="collapse-header">Mentor Menu:</h6>
+                <a class="collapse-item" href="#">List of Mentees</a>
+                <a class="collapse-item" href="#">Activities</a>
+                <a class="collapse-item" href="#">Statistics</a>
             </div>
         </div>
     </li>
